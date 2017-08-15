@@ -1,0 +1,271 @@
+/* 首页头部 */
+
+.header {
+  display: block;
+  height: 220rpx;
+  width: 750rpx;
+  position: relative;
+}
+
+.header-img {
+  z-index: 1;
+  height: 130rpx;
+  border-radius: 4rpx;
+  background-color: #fff;
+  position: absolute;
+  top: 100rpx;
+  box-shadow: 1rpx 4rpx 4rpx 2rpx #ccc;
+  margin-left: 30rpx;
+}
+
+.img {
+  width: 130rpx;
+  height: 130rpx;
+}
+
+text {
+  color: #fff;
+  display: block;
+}
+
+text:nth-child(1) {
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #232323;
+  font-weight: 700;
+}
+
+text:nth-child(2) {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #232323;
+  font-weight: 500;
+}
+
+.text {
+  position: absolute;
+  left: 176rpx;
+  top: 126rpx;
+}
+
+.me {
+  width: 32rpx;
+  height: 36rpx;
+}
+
+.personalCenter {
+  position: absolute;
+  left: 680rpx;
+  top: 32rpx;
+}
+
+/* 底部购物车 */
+
+.bottom-car {
+  height: 90rpx;
+  width: 750rpx;
+  border-top: 2rpx solid #9b9b9b;
+  position: fixed;
+  bottom: 1rpx;
+  z-index: 3;
+  background: #fff;
+}
+
+.bottom-car .img-car {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 28rpx;
+  text-align: center;
+  border-radius: 50%;
+  background: #4a200e;
+  position: absolute;
+  top: -36rpx;
+}
+
+.bottom-car .img-car image {
+  width: 60rpx;
+  height: 58rpx;
+  display: inline-block;
+  margin-top: 20rpx;
+}
+
+.bottom-car .img-car .car-count {
+  background: #ef4747;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: -20rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.car-price {
+  font-family: ArialUnicodeMS;
+  font-size: 24rpx;
+  color: #ef4747;
+  line-height: 78rpx;
+  position: absolute;
+  left: 180rpx;
+  font-weight: 700;
+}
+
+.bottom-car .text-car {
+  background: #fff;
+  width: 300rpx;
+  position: absolute;
+  top: 28rpx;
+  left: 180rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #9b9b9b;
+}
+
+.nullCar {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #9b9b9b;
+  text-align: center;
+}
+
+/* 总的原价 */
+
+.Zyuanjia {
+  color: #de533c;
+  text-decoration: line-through;
+  float: left;
+  position: absolute;
+  top: 28rpx;
+  left: 266rpx;
+}
+
+.Zyuanjia text {
+  color: #666;
+  font-family: HelveticaNeue;
+  font-size: 11px;
+}
+
+/* 小球动画 */
+
+.xiaoqiu {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 5;
+  background-color: #ffaf58;
+}
+
+.xiaoqiuYD {
+  animation: yundong 0.7s ease-out;
+}
+
+/* 定义动画 */
+
+@keyframes yundong {
+  from {
+    transform: scale(1.5);
+    background-color: #ffaf58;
+  }
+
+  to {
+    transform: scale(0.3);
+    left: 60rpx;
+    top: 1080rpx;
+    background-color: #ef4747;
+  }
+}
+
+/* 去结算 */
+
+.goPay {
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  width: 160rpx;
+  background-color: #ffaf58;
+  float: right;
+  color: #fff;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+}
+
+/* 弹出购物车详情 */
+
+.shopCarDetail {
+  width: 750rpx;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.20);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.bottom-CarDetail {
+  width: 750rpx;
+  padding-bottom: 56rpx;
+  padding-top: 34rpx;
+  background: #fff;
+  position: absolute;
+  bottom: 90rpx;
+  left: 0;
+}
+
+.bottom-CarDetail .carDetail {
+  overflow: hidden;
+  padding: 20rpx 32rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-CarDetail .carDetail-name {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #4a4a4a;
+  font-weight: 700;
+}
+
+.bottom-CarDetail .carDetail-right .carDetail-price {
+  font-family: HelveticaNeue-Medium;
+  font-size: 24rpx;
+  color: #ef4747;
+  float: left;
+  padding-bottom: 5rpx;
+}
+
+.carDetail-jian {
+  float: left;
+  width: 28rpx;
+  height: 28rpx;
+  border-radius: 50%;
+  line-height: 32rpx;
+  border: 2rpx solid #ffaf58;
+  text-align: center;
+  color: #ffaf58;
+  margin-left: 30rpx;
+}
+
+.carDetail-show {
+  float: left;
+  padding: 0 10rpx;
+  font-family: HelveticaNeue;
+  font-size: 24rpx;
+  color: #4a4a4a;
+  height: 32rpx;
+  line-height: 32rpx;
+}
+
+.carDetail-jia {
+  float: left;
+  width: 32rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #ffaf58;
+}

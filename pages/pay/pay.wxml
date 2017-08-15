@@ -1,0 +1,68 @@
+<!-- <include src="../template/template.wxml" /> -->
+
+<!-- 支付方式选择 -->
+<view class="payHeader">
+  <view class="payMethod">支付方式</view>
+  <view class="payLine">在线支付</view>
+</view>
+
+<!-- 所选菜品列表 -->
+<view class="content">
+  <view class="payContentText">订单内容</view>
+  <view class="payContentList">
+    <view class="payContentDetail" wx:for="{{payName}}">
+      <view class="contentName">{{item.name}}</view>
+      <view class="contentRight">
+        <view class="contentCount">×{{item.count}}</view>
+        <view class="contentMoney">￥{{item.jiage}}</view>
+      </view>
+
+    </view>
+  </view>
+  <view class="witezhifu">待支付 ￥ <text>{{Zjiage}}</text></view>
+</view>
+
+<!-- 信息填写 -->
+<view class="message">
+  <view class="messageText">您可填写您的姓名与电话，方便商家与您取得联系</view>
+  <view class="messageList">
+    <view class="kehuname"><text>姓名：</text><input /></view>
+    <view class="ketel"><text>电话：</text><input /></view>
+  </view>
+  <view class="dingdanbeizhu">订单备注</view>
+  <textarea />
+</view>
+<!-- 选择优惠劵 -->
+<!-- <view class="choose"> -->
+<!-- <view class="select-youhui" bindtap="choosed" data-isTure="{{isTure}}">
+    <view class="select-youhuiText">用劵优惠</view>
+    <block wx:if="{{isTure}}">
+      <view class="choose-youhui"></view>
+    </block>
+    <block wx:if="{{!isTure}}">
+      <view class="choosed">
+        <image src="../../images/pay-choose.png"></image>
+      </view>
+    </block>
+  </view> -->
+
+<!-- <view class="vip-youhui" bindtap="choosed2" data-isTure="{{isTrue2}}">
+    <view class="vip-youhuiText">会员优惠</view>
+    <block wx:if="{{isTrue2}}">
+      <view class="choose-youhui"></view>
+    </block>
+    <block wx:if="{{!isTrue2}}">
+      <view class="choosed">
+        <image src="../../images/pay-choose.png"></image>
+      </view>
+    </block>
+  </view> -->
+<!-- </view> -->
+<!-- 底部支付栏 -->
+<view class="bottom-pay">
+  <view class="pay-text">待支付:</view>
+  <view class="pay-money">￥{{Zjiage}}</view>
+  <navigator url="../payAfter/payAfter">
+    <view class="confirm">提交订单</view>
+  </navigator>
+</view>

@@ -1,0 +1,99 @@
+page {
+  background: rgba(243, 243, 243, 0.49);
+}
+
+.meHeader {
+  height: 260rpx;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 16rpx;
+}
+
+.meHeader image {
+  height: 132rpx;
+  width: 132rpx;
+  margin-top: 32rpx;
+}
+
+.personalName {
+  position: absolute;
+  top: 176rpx;
+  left: 294rpx;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #4a4a4a;
+  box-sizing: border-box;
+  padding-top: 12rpx;
+  font-weight: 600;
+  background: #fff;
+}
+
+.personalDetail {
+  background-color: #fff;
+  margin-top: 4rpx;
+}
+
+.personalDetail .dingdan {
+  padding: 1rpx 32rpx;
+  height: 80rpx;
+  border-bottom: 2rpx solid rgba(155, 155, 155, 0.1);
+}
+
+.personalDetail .jifen {
+  padding: 1rpx 32rpx;
+  height: 80rpx;
+  border-bottom: 2rpx solid rgba(155, 155, 155, 0.1);
+}
+
+/* 我的订单 */
+
+.dingdan .dingdanImg {
+  width: 44rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  float: left;
+}
+
+.dingdan .text {
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  line-height: 80rpx;
+  color: #4a4a4a;
+  float: left;
+}
+
+.dingdan .dingdanJiantou {
+  width: 14rpx;
+  height: 20rpx;
+  float: right;
+  margin-top: 30rpx;
+}
+
+/* 联系商家 */
+
+.telshoper {
+  overflow: hidden;
+  width: 140rpx;
+  position: fixed;
+  bottom: 54rpx;
+  left: 308rpx;
+}
+
+.telshoper .text {
+  float: left;
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+  color: #666;
+  margin-top: 6rpx;
+  margin-left: 12rpx;
+}
+
+.telshoper image {
+  float: left;
+  width: 36rpx;
+  height: 36rpx;
+}

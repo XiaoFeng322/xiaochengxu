@@ -1,0 +1,76 @@
+<include src="../template/template.wxml" />
+<import src="home-item/home-item-template.wxml" />
+
+<!-- 首页头部 -->
+<image class="header" src="../../images/banner.png">
+  <view class="text">
+    <text>水货餐厅(五道口店)</text>
+    <text>公告：以“蒸的美味”为主题</text>
+  </view>
+  <navigator url="../personalCenter/personalCenter" class="personalCenter">
+    <image src="../../images/me.png" class="me"></image>
+  </navigator>
+</image>
+<view class="header-img">
+  <image src="../../images/header.png" class="img"></image>
+</view>
+
+<!-- tab栏内容 -->
+<view class="table">
+  <image class="tabHot" src="../../images/tableList.png"></image>
+  <view class="table-left">
+    <view class="tabList {{clickName==item.id?'click':''}}" data-id="{{item.id}}" data-name="{{item.name}}" bindtap="temp" wx:for="{{tabList}}">
+      {{item.name}}
+      <view class="bottom-line"></view>
+    </view>
+  </view>
+  <view class="table-right">
+    <view class="contentHeader"></view>
+    <!-- 菜品展示 -->
+    <!-- 菜品排行 -->
+    <block wx:if="{{clickName==0?true:false}}">
+      <view class="auto-show">
+        <view class="contentList" wx:for="{{contentList}}">
+        <template is="homeItem" data="{{...item}}"/>
+        </view>
+      </view>
+    </block>
+    <!-- 今日推荐 -->
+    <block wx:if="{{clickName==1?true:false}}">
+      <view class="auto-show">
+        <view class="contentList" wx:for="{{jiachangcai}}">
+          <template is="homeItem" data="{{...item}}"/>
+        </view>
+      </view>
+    </block>
+    <!-- 优惠券 -->
+    <block wx:if="{{clickName==2?true:false}}">
+      <view class="auto-show">
+        <view class="contentList" wx:for="{{xiaochao}}">
+          <template is="homeItem" data="{{...item}}"/>
+        </view>
+      </view>
+    </block>
+    <!-- 折扣菜 -->
+    <block wx:if="{{clickName==3?true:false}}">
+      <view class="auto-show">
+        <view class="contentList" wx:for="{{xiaocai}}">
+         <template is="homeItem" data="{{...item}}"/>
+        </view>
+      </view>
+    </block>
+    <!-- 热菜 -->
+    <block wx:if="{{clickName==4?true:false}}">
+      <view class="auto-show">
+        <view class="contentList" wx:for="{{jingping}}">
+          <template is="homeItem" data="{{...item}}"/>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<!-- 动画小球 -->
+<block wx:if="{{xiaoqiuYD}}">
+  <view class="xiaoqiu xiaoqiuYD" style="left:{{fixedLeft}}rpx;top:{{fixedTop}}rpx;"></view>
+</block>

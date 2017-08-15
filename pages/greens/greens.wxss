@@ -1,0 +1,133 @@
+@import "../template/template.wxss";
+.banner {
+  width: 692rpx;
+  height: 460rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  position: relative;
+}
+
+.xiangchi {
+  width: 180rpx;
+  height: 66rpx;
+  border-radius: 80rpx;
+  border: 2rpx solid #f4b31c;
+  position: absolute;
+  right: 32rpx;
+  bottom: 22rpx;
+}
+
+.xiangchi text {
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #fff;
+  float: right;
+  margin-right: 24rpx;
+  margin-top: 15rpx;
+}
+
+.xiangchi image {
+  width: 54rpx;
+  height: 50rpx;
+  float: left;
+  margin-left: 26rpx;
+  margin-top: 8rpx;
+}
+
+.greensName {
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #4a4a4a;
+  font-weight: 700;
+  margin-left: 62rpx;
+  margin-top: 30rpx;
+}
+
+.youhui {
+  overflow: hidden;
+}
+
+.left-youhui {
+  float: left;
+}
+
+.top-youhui {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #da3f25;
+  margin-left: 64rpx;
+  margin-top: 28rpx;
+  display: inline-block;
+}
+
+.left-youhui text {
+  font-family: HelveticaNeue-Medium;
+  font-size: 36rpx;
+  color: #ef4747;
+  line-height: 56rpx;
+  font-weight: 700;
+  margin-left: 14rpx;
+  display: inline-block;
+}
+
+.bottom-yuan {
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+  color: #666;
+  margin-left: 80rpx;
+  margin-top: 8rpx;
+  position: relative;
+  margin-bottom: 34rpx;
+}
+
+.bottom-yuan .redLine {
+  background: #de533c;
+  height: 2rpx;
+  width: 126rpx;
+  position: absolute;
+  top: 10rpx;
+  left: -10rpx;
+}
+
+.right-car {
+  float: right;
+  background: #f4b31c;
+  border-radius: 80rpx;
+  width: 130rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  text-align: center;
+  margin-right: 60rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+  color: #fff;
+  margin-top: 42rpx;
+}
+
+.introduce {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #666;
+  line-height: 40rpx;
+  width: 604rpx;
+  margin-left: 86rpx;
+}
+
+.state {
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #4a4a4a;
+  font-weight: 700;
+  margin-top: 26rpx;
+  margin-left: 62rpx;
+}
+
+.stateContent {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #666;
+  letter-spacing: 2rpx;
+  line-height: 40rpx;
+  margin-left: 86rpx;
+  margin-top: 24rpx;
+}

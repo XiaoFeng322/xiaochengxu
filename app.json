@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/template/template",
+    
+    "pages/payDetail/payDetail",
+    "pages/greens/greens",
+    "pages/dingdan/dingdan",
+    "pages/personalCenter/personalCenter",
+    "pages/pay/pay",
+    
+    "pages/payAfter/payAfter",
+    "pages/youhuijuan/youhuijuan"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "水货餐厅",
+    "navigationBarTextStyle": "#fff"
+  }
+}

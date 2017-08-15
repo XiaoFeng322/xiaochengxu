@@ -1,0 +1,69 @@
+<view class="meHeader">
+  <image src="../../images/personal.png"></image>
+</view>
+<view class="personalName">
+  Chris Brown
+</view>
+<!-- 优惠劵列表 -->
+<view class="yhjList">
+  <view class="yhj-detail">
+    <image src="../../images/youhuijuan.png">
+      <view class="yhj-left">
+        <view class="price">
+          <view>￥</view>23</view>
+        <view class="priceUse">满100使用</view>
+      </view>
+      <view class="yhj-middel">
+        <view>水货餐厅</view>
+        <view>限2017-07-26当天使用</view>
+        <view>限手机号为 17710196864</view>
+      </view>
+      <view class="yhj-user">立即使用</view>
+    </image>
+  </view>
+  <view class="yhj-detail">
+    <image src="../../images/youhuijuan.png">
+      <view class="yhj-left">
+        <view class="price">
+          <view>￥</view>23</view>
+        <view class="priceUse">满100使用</view>
+      </view>
+      <view class="yhj-middel">
+        <view>水货餐厅</view>
+        <view>限2017-07-26当天使用</view>
+        <view>限手机号为 17710196864</view>
+      </view>
+      <view class="yhj-user">立即使用</view>
+    </image>
+  </view>
+  <view class="yhj-detail">
+    <image src="../../images/youhuijuan.png">
+      <view class="yhj-left">
+        <view class="price">
+          <view>￥</view>23</view>
+        <view class="priceUse">满100使用</view>
+      </view>
+      <view class="yhj-middel">
+        <view>水货餐厅</view>
+        <view>限2017-07-26当天使用</view>
+        <view>限手机号为 17710196864</view>
+      </view>
+      <view class="yhj-user">立即使用</view>
+    </image>
+  </view>
+  <view class="yhj-detail">
+    <image src="../../images/youhuijuan.png">
+      <view class="yhj-left">
+        <view class="price">
+          <view>￥</view>23</view>
+        <view class="priceUse">满100使用</view>
+      </view>
+      <view class="yhj-middel">
+        <view>水货餐厅</view>
+        <view>限2017-07-26当天使用</view>
+        <view>限手机号为 17710196864</view>
+      </view>
+      <view class="yhj-user">立即使用</view>
+    </image>
+  </view>
+</view>

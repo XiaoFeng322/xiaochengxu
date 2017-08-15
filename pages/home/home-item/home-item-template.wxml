@@ -1,0 +1,22 @@
+<template name="homeItem">
+    <view class="contentList-left">
+         <image src="{{imgSrc}}"></image>
+    </view>
+    <view class="contentList-right" bindtap="isHiddendetail" id="{{id}}" data-ishidden="{{isHidden}}" data-addcai="{{name}}" data-sell="{{month}}" data-addjiage="{{price}}">
+            <view class="contentNmae">{{name}}</view>
+            <view class="theme">我爱鱼头...</view>
+            <view class="miaoshu">
+                 <view class="contentMonth">月销:{{month}}</view>
+                 <view class="likeEat">23人想吃</view>
+            </view>
+
+            <view class="bottom-price">
+                <view class="contentPrice">￥{{price}}</view>
+                <view class="yuanjia" >
+                    <text>￥123</text>
+                </view>
+                  <view class="add" id="{{id}}" catchtap="addCar" data-addcai="{{name}}" data-addjiage="{{price}}" data-xiaoqiu="{{xiaoqiuYD}}">+</view>
+                
+            </view>
+    </view>
+</template>

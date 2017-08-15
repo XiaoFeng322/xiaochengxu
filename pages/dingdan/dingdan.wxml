@@ -1,0 +1,29 @@
+<view class="meHeader">
+  <image src="../../images/personal.png"></image>
+</view>
+<view class="personalName">
+  Chris Brown
+</view>
+<!-- 订单详情 -->
+<block wx:for="{{orderList}}">
+  <view class="ddList" bindtap="toDetail">
+    <view class="dingdan">
+      <view class="ddTime">{{item.time}}</view>
+      <view class="ddcenter">
+        <view class="top-ddcenter">
+          <view class="ddName">{{item.name}}</view>
+          <view class="ddjiage">￥{{item.price}}</view>
+        </view>
+        <view class="bottom-ddcenter">
+          <view class="ddName">小炒肉大盖饭</view>
+          <view class="ddjiage">￥99</view>
+        </view>
+      </view>
+      <view class="ddState">已支付</view>
+    </view>
+    <view class="ddBottom">
+      <view class="ddCount">共8件商品</view>
+      <view class="Zjiage">￥99</view>
+    </view>
+  </view>
+</block>

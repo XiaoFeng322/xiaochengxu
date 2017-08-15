@@ -1,0 +1,118 @@
+page {
+  background: rgba(243, 243, 243, 0.49);
+}
+
+/* 头部 */
+
+.meHeader {
+  height: 120rpx;
+  background: #4a200e;
+  display: flex;
+  justify-content: center;
+}
+
+.meHeader image {
+  height: 132rpx;
+  width: 132rpx;
+  margin-top: 32rpx;
+}
+
+.personalName {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #4a4a4a;
+  box-sizing: border-box;
+  padding-top: 12rpx;
+  font-weight: 600;
+  background: #fff;
+  box-shadow: 1rpx 2rpx 4rpx 1rpx rgba(155, 154, 155, 0.20);
+}
+
+.personalDetail {
+  height: 242rpx;
+  background-color: #fff;
+  margin-top: 4rpx;
+  padding: 1rpx 32rpx;
+}
+
+.personalDetail .dingdan {
+  height: 80rpx;
+  border-bottom: 2rpx solid rgba(155, 155, 155, 0.1);
+}
+
+.personalDetail .jifen {
+  height: 80rpx;
+  border-bottom: 2rpx solid rgba(155, 155, 155, 0.1);
+}
+
+/* 优惠劵详情 */
+
+.yhj-detail image {
+  width: 720rpx;
+  height: 200rpx;
+  margin-left: 16rpx;
+  margin-top: 10rpx;
+  position: relative;
+}
+.yhj-detail .yhj-left{
+  position:absolute;
+  top: 50rpx;
+  left: 46rpx;
+}
+ .yhj-left .price {
+  font-family: HelveticaNeue-Medium;
+  font-size: 48rpx;
+  color: #ef4747;
+  line-height: 56rpx;
+  font-weight: 700;
+} 
+ .yhj-left .price view {
+  font-size: 28rpx;
+  display: inline-block;
+}
+ .yhj-left .priceUse {
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+  color: #9b9b9b;
+}
+.yhjList .yhj-middel{
+  position: absolute;
+  left: 224rpx;
+  top:46rpx;
+}
+.yhj-middel view:nth-child(1) {
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #4a4a4a;
+  padding-bottom: 16rpx;
+}
+
+.yhj-middel view:nth-child(2) {
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+  color: #4a4a4a;
+  padding-bottom: 2rpx;
+}
+
+.yhj-middel view:nth-child(3) {
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+  color: #4a4a4a;
+}
+.yhjList .yhj-user{
+  width: 120rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  color: #ffaf58;
+  border:1px solid #ffaf58;
+  border-radius: 20rpx;
+  font-size: 22rpx;
+  position: absolute;
+  left: 554rpx;
+  top:80rpx;
+}

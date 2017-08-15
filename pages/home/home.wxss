@@ -1,0 +1,95 @@
+@import "../template/template.wxss";
+@import "home-item/home-item-template.wxss";
+
+page {
+  height: 100%;
+}
+
+/* 点击tab栏时的切换类名和样式 */
+
+.click {
+  background-color: #fff;
+  color: #000;
+}
+
+/* table栏切换内容区 */
+
+.table {
+  overflow: hidden;
+  margin-top: 4rpx;
+  padding-top: 20rpx;
+}
+
+.table .tabHot {
+  width: 20rpx;
+  height: 28rpx;
+  position: absolute;
+  top: 246rpx;
+  left: 140rpx;
+  z-index: 2;
+}
+
+.table .table-left {
+  background: rgba(243, 243, 243, 0.49);
+  width: 160rpx;
+  height: 884rpx;
+  float: left;
+}
+
+.table .table-left .tabList {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #4a4a4a;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  position: relative;
+}
+
+.table .table-left .tabList image {
+  width: 20rpx;
+  height: 28rpx;
+  margin-top: 6rpx;
+}
+
+.table .table-left .tabList .bottom-line {
+  width: 122rpx;
+  height: 2rpx;
+  background-color: rgba(155, 155, 155, 0.1);
+  position: absolute;
+  bottom: 1rpx;
+  left: 16rpx;
+}
+
+.table .table-right {
+  float: left;
+}
+
+.table .contentHeader {
+  width: 540rpx;
+  margin-left: 30rpx;
+  font-family: ArialUnicodeMS;
+  font-size: 24rpx;
+  color: #4a4a4a;
+}
+
+/* 设置菜品列滚动条 */
+
+.auto-show {
+  height: 820rpx;
+  overflow: auto;
+  margin-bottom: 90rpx;
+}
+
+.contentList {
+  overflow: hidden;
+  margin-left: 30rpx;
+  padding-bottom: 18rpx;
+  border-bottom: 2rpx solid rgba(155, 155, 155, 0.09);
+}
+
+/* 首页减少按钮 */
+
+.homeAdd {
+  float: right;
+}

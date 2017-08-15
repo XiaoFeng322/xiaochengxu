@@ -1,0 +1,36 @@
+<!-- 底部购物车 -->
+<view class="bottom-car">
+  <view class="img-car" bindtap="carClick">
+    <image src="../../images/car.png"></image>
+    <view class="car-count">{{carCount}}</view>
+  </view>
+  <view class="car-price">￥{{addjiage}}</view>
+  <view class="Zyuanjia"><text>￥123</text></view>
+  <block wx:if="{{carCount==0}}">
+    <view class="text-car">未选购商品</view>
+  </block>
+  <block wx:if="{{carCount!=0}}">
+    <navigator url="../pay/pay">
+      <view class="goPay">去结算</view>
+    </navigator>
+  </block>
+</view>
+<!-- 点击购物车显示购物车详情内容 -->
+<block wx:if="{{carClick}}">
+  <view class="shopCarDetail" bindtap="carClick1">
+    <view class="bottom-CarDetail">
+      <block wx:if="{{carDetail.length==0?true:false}}">
+        <view class="nullCar">购物车空了哦~</view>
+      </block>
+      <view class="carDetail" wx:for="{{carDetail}}">
+        <view class="carDetail-name">{{item.name}}</view>
+        <view class="carDetail-right">
+          <view class="carDetail-price">￥{{item.jiage}}</view>
+          <view class="carDetail-jian" catchtap="clickJian" id="{{item.id}}">-</view>
+          <view class="carDetail-show">{{item.count}}</view>
+          <view class="carDetail-jia" catchtap="clickJia" id="{{item.id}}">+</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>

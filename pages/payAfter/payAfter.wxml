@@ -1,0 +1,31 @@
+<view class="pagemain">
+    <view class="caiDetail">菜品信息</view>
+    <block wx:for="{{payName}}">
+      <view class="listDetail">
+        <view class="detailName">{{item.name}}</view>
+        <view class="detailCountMmoney">
+            <view class="detailCount">×{{item.count}}</view>
+            <view class="detailMoney">￥{{item.jiage}}</view>
+        </view>
+      </view>
+    </block>
+    <view class="SFbox">
+        <view class="shifu">
+          <text class="shifuName"> 实付:</text>
+          <text class="shifuPrice"> ￥{{Zjiage}}</text>
+        </view>
+    </view>
+    <view class="btn">
+      <text bindtap="telShoper">联系商家</text>
+    </view>
+</view>
+
+<view class="pagebottom">
+    <view class="dingdanDetail">订单备注</view>
+    <view class="details">
+      <text  class="dingdanMark">订单号:00809809809809</text>
+      <text  class="zhifuMethod">支付方式:在线支付</text>
+      <text class="zhifuStatus">支付状态:已支付</text>
+      <text class="XDtime">下单时间:2017-8-10 20:30</text>
+    </view>
+</view>

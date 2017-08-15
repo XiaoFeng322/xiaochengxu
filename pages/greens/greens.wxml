@@ -1,0 +1,44 @@
+<include src="../template/template.wxml" />
+<!-- 商品banner图 -->
+<image class="banner" src="../../images/caipin.png">
+  <view class="xiangchi" bindtap="dianzan">
+    <block wx:if="{{dianzan}}">
+      <image src="../../images/dianzan.png"></image>
+    </block>
+    <block wx:if="{{!dianzan}}">
+      <image src="../../images/xiangchi.png"></image>
+    </block>
+    <text>想吃</text>
+  </view>
+</image>
+<view class="greensName">{{name}}</view>
+<view class="youhui">
+  <view class="left-youhui">
+    <view class="top-youhui">优惠价</view><text>￥{{jiage}}</text>
+    <view class="bottom-yuan">
+      <view class="redLine"></view>原价 ￥129</view>
+  </view>
+  <view class="right-car" id="{{id}}" catchtap="addCar" data-addcai="{{name}}" data-addjiage="{{jiage}}" data-xiaoqiu="{{xiaoqiuYD}}">加入购物车</view>
+</view>
+
+<view class="introduce">我爱鱼头以“蒸的美味”为主题，各式蒸菜的组合让吃得健康、吃得营养、吃得便捷充分体现。我爱鱼头依据营养专家建议进行科学配比，选用健康有机食材，为顾客提供绿色。</view>
+<view class="state">优惠说明</view>
+<view class="stateContent">我爱鱼头以“蒸的美味”为主题，各式蒸菜的组合让吃得健康、吃得营养、吃得便捷充分体现。</view>
+<view class="classname">{{aaa}}</view>
+<!-- 购物车 -->
+<!-- 底部购物车 -->
+<view class="bottom-car">
+  <view class="img-car" bindtap="carClick">
+    <image src="../../images/car.png"></image>
+    <view class="car-count">{{carCount}}</view>
+  </view>
+  <view class="car-price">￥{{addjiage}}</view>
+  <block wx:if="{{carCount==0}}">
+    <view class="text-car">未选购商品</view>
+  </block>
+  <block wx:if="{{carCount!=0}}">
+    <navigator url="../pay/pay">
+      <view class="goPay">去结算</view>
+    </navigator>
+  </block>
+</view>

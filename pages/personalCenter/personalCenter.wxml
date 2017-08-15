@@ -1,0 +1,20 @@
+<view class="meHeader">
+  <image src="../../images/personal.png"></image>
+</view>
+<view class="personalName">
+  Chris Brown
+</view>
+
+<view class="personalDetail">
+  <navigator url="../dingdan/dingdan">
+    <view class="dingdan">
+      <image class="dingdanImg" src="../../images/dingdan.png"></image>
+      <view class="text">我的订单</view>
+      <image class="dingdanJiantou" src="../../images/jiantou.png"></image>
+    </view>
+  </navigator>
+</view>
+<view class="telshoper" bindtap="Tel">
+  <image src="../../images/lianxi.png"></image>
+  <view class="text">联系商家</view>
+</view>

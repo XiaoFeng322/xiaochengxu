@@ -1,0 +1,95 @@
+/*不同种类菜品样式*/
+.contentList .contentList-left {
+  float: left;
+  margin-right: 20rpx;
+}
+
+.contentList image {
+  width: 120rpx;
+  height: 120rpx;
+  margin-top: 14rpx;
+}
+
+.contentList .contentList-right .contentNmae {
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #4a4a4a;
+  letter-spacing: 1rpx;
+  text-align: left;
+  font-weight: 700;
+  margin-top: 12rpx;
+  margin-bottom: 14rpx;
+}
+
+.contentList .contentList-right .theme {
+  font-family: PingFangSC-Regular;
+  font-size: 10px;
+  color: #666;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  margin-bottom: 4rpx;
+}
+
+.contentList .contentList-right .miaoshu {
+  overflow: hidden;
+}
+
+.contentList .contentList-right .miaoshu .contentMonth {
+  font-family: PingFangSC-Medium;
+  font-size: 10px;
+  color: #4a4a4a;
+  margin-top: 4rpx;
+  float: left;
+  font-weight: 590;
+}
+
+.contentList .contentList-right .miaoshu .likeEat {
+  font-family: PingFangSC-Regular;
+  font-size: 10px;
+  color: #666;
+  float: left;
+  margin-left: 16rpx;
+  margin-top: 4rpx;
+}
+
+.contentList .contentList-right .bottom-price {
+  padding-top: 30rpx;
+  overflow: hidden;
+}
+
+.contentList .contentList-right .bottom-price .contentPrice {
+  font-family: HelveticaNeue-Medium;
+  font-size: 28rpx;
+  color: #ef4747;
+  font-weight: 700;
+  float: left;
+  margin-right: 20rpx;
+  vertical-align: middle;
+}
+
+.contentList .contentList-right .bottom-price .yuanjia {
+  float: left;
+  margin-top: 6rpx;
+  text-decoration: line-through;
+  color: #f00;
+  vertical-align: middle;
+} 
+.yuanjia text {
+ font-family: HelveticaNeue;
+ font-size: 22rpx;
+ color: #666666;
+}
+
+.add {
+  width: 40rpx;
+  height: 40rpx;
+  color: #fff;
+  line-height: 40rpx;
+  text-align: center;
+  background-color: #ffaf58;
+  border-radius: 50%;
+  float: right;
+}
+
+
+/* 首页减少按钮 */

@@ -1,0 +1,259 @@
+/* @import "../template/template.wxss"; */
+
+page {
+  background: #f3f3f3;
+}
+
+/* 头部支付方式 */
+
+.payHeader {
+  background: #fff;
+  padding: 0 32rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  overflow: hidden;
+  margin-bottom: 16rpx;
+}
+
+.payHeader .payMethod {
+  float: left;
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #4a4a4a;
+  font-weight: 700;
+}
+
+.payLine {
+  float: right;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #666;
+}
+
+/* 所选菜品列表 */
+
+.content {
+  padding: 32rpx;
+  background: #fff;
+  margin-bottom: 16rpx;
+}
+
+.payContentText {
+  border-bottom: 2rpx solid #ccc;
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #4a4a4a;
+  font-weight: 700;
+  padding-bottom: 24rpx;
+}
+
+.payContentList {
+  border-bottom: 2rpx solid #ccc;
+  padding-top: 18rpx;
+  padding-bottom: 12rpx;
+}
+
+.payContentDetail {
+  overflow: hidden;
+  padding-left: 28rpx;
+  margin-bottom: 24rpx;
+}
+
+.payContentDetail .contentName {
+  float: left;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #4a4a4a;
+  font-weight: 700;
+}
+
+.payContentDetail .contentRight{
+  float: right;
+}
+
+.payContentDetail .contentRight .contentCount {
+  display: inline-block;
+  font-family: HelveticaNeue;
+  font-size: 24rpx;
+  color: #666;
+  margin-right: 108rpx;
+}
+
+.payContentDetail .contentRight .contentMoney {
+  display: inline-block;
+  font-family: ArialUnicodeMS;
+  font-size: 24rpx;
+  color: #4a4a4a;
+  margin-right: 26rpx;
+}
+
+.witezhifu {
+  text-align: right;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #4a4a4a;
+}
+
+.witezhifu text {
+  font-family: HelveticaNeue;
+  font-size: 32rpx;
+  color: #4a4a4a;
+  line-height: 56rpx;
+  font-weight: 580;
+}
+
+.message {
+  background: #fff;
+  padding-top: 26rpx;
+  padding-left: 32rpx;
+  padding-bottom: 100rpx;
+}
+
+.message .messageText {
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+  color: #4a4a4a;
+  margin-bottom: 26rpx;
+}
+
+.messageList {
+  overflow: hidden;
+  margin-left: 100rpx;
+}
+
+input {
+  display: inline-block;
+  background: rgba(243, 243, 243, 0.40);
+  border-radius: 4rpx;
+  width: 420rpx;
+  height: 60rpx;
+}
+
+.messageList text {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #4a4a4a;
+  float: left;
+  margin-top: 19rpx;
+}
+
+.kehuname {
+  height: 60rpx;
+  margin-bottom: 20rpx;
+}
+
+.dingdanbeizhu {
+  margin-top: 24rpx;
+  margin-bottom: 20rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+textarea {
+  background: rgba(243, 243, 243, 0.40);
+  width: 684rpx;
+}
+
+/* 用劵优惠会员优惠 */
+
+.choose {
+  padding: 1rpx 30rpx;
+  background-color: #fff;
+  margin-top: 10rpx;
+}
+
+.choose .select-youhui {
+  overflow: hidden;
+  line-height: 70rpx;
+  border-bottom: 2rpx solid rgba(155, 155, 155, 0.09);
+}
+
+.choose .select-youhui .select-youhuiText {
+  float: left;
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #4a4a4a;
+}
+
+.choose .vip-youhui {
+  overflow: hidden;
+  line-height: 70rpx;
+}
+
+.choose .vip-youhui .vip-youhuiText {
+  float: left;
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #4a4a4a;
+}
+
+.choose-youhui {
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  border: 2rpx solid #9b9b9b;
+  float: right;
+  margin-top: 16rpx;
+}
+
+/* 选择后的样式类名 */
+
+.choosed {
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 50%;
+  background-color: #ffaf58;
+  float: right;
+  position: relative;
+  margin-top: 16rpx;
+}
+
+.choosed image {
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  top: 6rpx;
+  left: 6rpx;
+}
+
+/* 底部支付栏 */
+
+.bottom-pay {
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  border-top: 2rpx solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 1rpx;
+}
+
+.bottom-pay .pay-text {
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #4a4a4a;
+  float: left;
+  line-height: 90rpx;
+  margin: 1rpx 20rpx 1rpx 30rpx;
+  font-weight: 700;
+}
+
+.bottom-pay .pay-money {
+  float: left;
+  font-family: HelveticaNeue-Medium;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #ef4747;
+  line-height: 90rpx;
+}
+
+.bottom-pay .confirm {
+  float: right;
+  line-height: 90rpx;
+  background-color: #ffaf58;
+  font-size: 28rpx;
+  color: #fff;
+  width: 180rpx;
+  text-align: center;
+}
